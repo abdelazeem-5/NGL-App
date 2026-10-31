@@ -1,0 +1,18 @@
+import {z} from "zod";
+import AppError from "../../lib/error/error.js";
+
+const validateBody = (dto , body) => {
+    const result = z.safeParse(dto , body)
+    if (result.success === false) 
+    {
+        const errMessages = result.error.issues.map(
+            issue => `${issue.path[0]}: ${issue.message}`
+        );
+        throw new AppError(errMessages.join(', ') , 400);
+    }
+    return result.data;
+}
+
+export{
+    validateBody
+}
