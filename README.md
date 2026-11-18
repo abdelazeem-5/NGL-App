@@ -1,6 +1,5 @@
 <div align="center">
 
-<!-- لون غامق هادي مع كتابة أزرق فاتح مريح للعين -->
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0e1624&height=200&section=header&text=NGL%20App&fontSize=70&fontColor=00B4D8&fontAlignY=35&desc=Anonymous%20Messaging%20Backend&descAlignY=55&descSize=20" width="100%"/>
 
 ### 💬 Anonymous Messaging Backend
@@ -18,7 +17,6 @@ A RESTful API for anonymous messaging, authentication, and secure account manage
 
 </div>
 
----
 
 ## 📖 About The Project
 
@@ -26,5 +24,5 @@ A RESTful API for anonymous messaging, authentication, and secure account manage
 
 The project is built with a clean **layered architecture** for separation of concerns and maintainability.
 
-```text
+
 Route → Controller → Service → Repository → Database
